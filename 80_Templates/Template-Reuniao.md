@@ -5,7 +5,7 @@ tags:
 contexto:
 status:
 ---
-# Reuniao: Titulo da Reuniao
+# Reunião: Título da Reunião
 
 ## Contexto
 
@@ -19,15 +19,15 @@ Onde aconteceu, por que aconteceu e em qual projeto/contexto ela se encaixa.
 
 - 
 
-## Decisoes
+## Decisões
 
 - 
 
-## Pendencias
+## Pendências
 
 - [ ] 
 
-## Proximos Passos
+## Próximos Passos
 
 - [ ] 
 

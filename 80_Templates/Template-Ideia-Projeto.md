@@ -16,9 +16,9 @@ Que dor, oportunidade ou curiosidade esta motivando essa ideia?
 
 Descreva a ideia em 3-6 linhas.
 
-## Publico ou Contexto de Uso
+## Público ou Contexto de Uso
 
-Para quem isso serviria? Em que situacao?
+Para quem isso serviria? Em que situação?
 
 ## Valor Esperado
 
@@ -30,13 +30,13 @@ O que essa ideia melhoraria, aceleraria ou resolveria?
 - funcionalidade 2
 - funcionalidade 3
 
-## Riscos, Duvidas e Dependencias
+## Riscos, Dúvidas e Dependências
 
 - risco 1
-- duvida 1
-- dependencia 1
+- dúvida 1
+- dependência 1
 
-## Proximos Passos
+## Próximos Passos
 
 - [ ] validar se a ideia faz sentido
 - [ ] definir escopo inicial

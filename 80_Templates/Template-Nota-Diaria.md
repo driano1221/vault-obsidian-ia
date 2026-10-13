@@ -4,13 +4,13 @@ tags:
   - diario
   - rotina
 ---
-# Diario: {{date}}
+# Diário: {{date}}
 
 ## Resumo do Dia
 
-Breve sintese do dia em 2-4 linhas.
+Breve síntese do dia em 2-4 linhas.
 
-## O Que Fiz Ate Agora
+## O Que Fiz Até Agora
 
 - 
 - 
@@ -18,13 +18,11 @@ Breve sintese do dia em 2-4 linhas.
 
 ## Contextos
 
-%% contextos:inicio %%
 ### Exemplo Trabalho
 
 - [ ] 
-%% contextos:fim %%
 
-### Estudos
+## Estudos
 
 - [ ] 
 
@@ -33,7 +31,7 @@ Breve sintese do dia em 2-4 linhas.
 - [ ] Organizei algo no vault?
 - [ ] Surgiu alguma ideia de projeto?
 
-## Capturas e Observacoes
+## Capturas e Observações
 
 - 
 
@@ -44,4 +42,4 @@ Breve sintese do dia em 2-4 linhas.
 ## Links Relacionados
 
 - [[Home]]
-- [[81_Diario/README|Diario]]
+- [[81_Diario/README|Diário]]

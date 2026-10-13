@@ -11,7 +11,7 @@ contexto:
 
 Qual problema esse snippet resolve?
 
-## Solucao
+## Solução
 
 ```text
 
@@ -20,7 +20,7 @@ Qual problema esse snippet resolve?
 ## Quando Usar
 
 
-## Observacoes
+## Observações
 
 Limites, cuidados, dependencias ou variacoes.
 

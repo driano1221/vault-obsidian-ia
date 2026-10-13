@@ -24,10 +24,10 @@ Onde foi usado? Projeto, ferramenta, LLM?
 Cole o prompt completo aqui. Use marcadores como [VARIAVEL] para parametros.
 ```
 
-## Variaveis
+## Variáveis
 
-- `[VARIAVEL_1]` - descricao
-- `[VARIAVEL_2]` - descricao
+- `[VARIAVEL_1]` - descrição
+- `[VARIAVEL_2]` - descrição
 
 ## Exemplo de Uso
 
@@ -36,22 +36,22 @@ Cole o prompt completo aqui. Use marcadores como [VARIAVEL] para parametros.
 
 ```
 
-**Saida esperada:**
+**Saída esperada:**
 ```text
 
 ```
 
 ## Resultados
 
-| LLM | Modelo | Qualidade | Custo | Observacao |
+| LLM | Modelo | Qualidade | Custo | Observação |
 |-----|--------|-----------|-------|------------|
 |     |        |           |       |            |
 
-## Historico de Versoes
+## Histórico de Versões
 
-| Versao | Data | Alteracoes |
+| Versão | Data | Alterações |
 |--------|------|------------|
-| v1     |      | Criacao    |
+| v1     |      | Criação    |
 
 ## Links Relacionados
 

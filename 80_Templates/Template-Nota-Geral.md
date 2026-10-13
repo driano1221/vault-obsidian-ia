@@ -5,7 +5,7 @@ tags:
 contexto:
 status:
 ---
-# Titulo da Nota
+# Título da Nota
 
 ## Resumo
 
@@ -19,6 +19,6 @@ Desenvolva a ideia principal aqui.
 
 - [[Home]]
 
-## Proximas Acoes
+## Próximas Ações
 
 - [ ] 

@@ -8,11 +8,11 @@ fonte:
 autores:
 ano:
 ---
-# Titulo do Paper
+# Título do Paper
 
-## Referencia
+## Referência
 
-Cole a referencia completa, DOI, link ou citacao curta.
+Cole a referência completa, DOI, link ou citacao curta.
 
 ## Resumo
 
@@ -26,24 +26,24 @@ Qual problema o paper tenta responder?
 
 Descreva metodo, dados, experimento ou abordagem.
 
-## Contribuicoes
+## Contribuições
 
 Liste as principais contribuicoes.
 
-## Limitacoes
+## Limitações
 
 Liste limites, fragilidades ou pontos de cautela.
 
 ## Como Isso Se Conecta ao Seu Trabalho
 
-- conexao com o README do contexto onde o paper sera usado
-- conexao com outra nota, projeto ou pergunta de pesquisa
+- conexão com o README do contexto onde o paper sera usado
+- conexão com outra nota, projeto ou pergunta de pesquisa
 
 ## Como Isso Conecta ao Vault
 
 - [[Home]]
 - [[20_Estudos/README|Estudos]]
 
-## Proximas Acoes
+## Próximas Ações
 
 - [ ] 

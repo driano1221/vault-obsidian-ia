@@ -5,7 +5,7 @@ Argumentos opcionais: $ARGUMENTS
 ## 1. Ver o estado atual
 
 - Leia `CLAUDE.md`, `Home.md`, `sobre-mim.md` e `80_Templates/Template-Nota-Diaria.md`.
-- Se o bloco `%% perfil:inicio %%` do `CLAUDE.md` já tiver um nome (não diz "a configurar"), o vault já foi configurado. Pergunte se a pessoa quer **acrescentar contextos**, **renomear algum** ou **refazer o perfil**, e faça só isso.
+- Se o bloco `perfil` do `CLAUDE.md` já tiver um nome (não diz "a configurar"), o vault já foi configurado. Pergunte se a pessoa quer **acrescentar contextos**, **renomear algum** ou **refazer o perfil**, e faça só isso.
 
 ## 2. Perguntar, em um lote só
 
@@ -59,12 +59,13 @@ Depois do ok:
    - [[Home]]
    ```
 
-2. **Atualizar os blocos marcados**, trocando só o que está entre os marcadores e mantendo os marcadores:
-   - `CLAUDE.md`, bloco `perfil`: nome, o que a pessoa faz e as áreas, em 2 a 4 linhas;
-   - `CLAUDE.md`, bloco `contextos`: uma linha por pasta, no formato `` - `01_Nome` -> descrição. ``;
-   - `CLAUDE.md`, bloco `regras`: uma linha `- NEVER: ...` por regra de separação da resposta 3. Se não houver, deixe vazio;
-   - `Home.md`, bloco `contextos`: `- [[01_Nome/README|Nome legível]]` para cada pasta;
-   - `80_Templates/Template-Nota-Diaria.md`, bloco `contextos`: uma subseção `### Nome legível` com `- [ ] ` embaixo, para cada contexto.
+2. **Atualizar o resto do vault com as pastas novas:**
+   - `CLAUDE.md`: troque só o que está entre os marcadores `%% nome:inicio %%` e `%% nome:fim %%`, mantendo os marcadores:
+     - bloco `perfil`: nome, o que a pessoa faz e as áreas, em 2 a 4 linhas;
+     - bloco `contextos`: uma linha por pasta, no formato `` - `01_Nome` -> descrição. ``;
+     - bloco `regras`: uma linha `- NEVER: ...` por regra de separação da resposta 3. Se não houver, deixe vazio.
+   - `Home.md`, seção `## Meus Contextos`: troque a lista por `- [[01_Nome/README|Nome legível]]` para cada pasta. Se os exemplos forem mantidos, deixe também a linha do `01_Exemplo_Trabalho`.
+   - `80_Templates/Template-Nota-Diaria.md`, seção `## Contextos`: troque o conteúdo (até o próximo `##`) por uma subseção `### Nome legível` com `- [ ] ` embaixo, para cada contexto.
 
 3. **Preencher `sobre-mim.md`**, na raiz do vault, com o que a pessoa contou: quem é, o que faz, uma seção curta por área (o que é, pessoas e siglas que ela citou) e as regras de separação. Troque o texto de "a preencher", mantenha o frontmatter e atualize a `data` para hoje. É dessa nota que o agente tira contexto nas próximas sessões.
 
@@ -79,12 +80,12 @@ Depois do ok:
    81_Diario/2026-10-12.md
    ```
 
-   - **Se ela pediu para apagar:** apague esses arquivos (os que ainda existirem) e a pasta `01_Exemplo_Trabalho`, se ficar vazia. Depois, troque no `90_Visoes/painel-atual.md` a seção "Exemplo Trabalho" por uma seção vazia (`- [ ] `) por contexto.
+   - **Se ela pediu para apagar:** apague esses arquivos (os que ainda existirem) e a pasta `01_Exemplo_Trabalho`, se ficar vazia. Depois, troque no `90_Visoes/painel-atual.md` a seção "Exemplo Trabalho" por uma seção vazia (`- [ ] `) por contexto, e tire qualquer menção restante ao exemplo: a linha do `01_Exemplo_Trabalho` no `Home.md` e no bloco `contextos` do `CLAUDE.md`, e a subseção `### Exemplo Trabalho` do modelo de diário.
    - **Se pediu para manter:** não toque neles. Avise que dá para rodar `/configurar-vault apagar exemplos` depois.
 
 5. **Conferir:**
    - todo wikilink novo aponta para um arquivo que existe;
-   - nenhum bloco marcado ficou duplicado;
+   - nenhum marcador do `CLAUDE.md` ficou duplicado ou foi apagado;
    - `90_Visoes/linha-do-tempo.base` não precisa mudar, porque o contexto vem do nome da pasta.
 
 ## 5. Fechar

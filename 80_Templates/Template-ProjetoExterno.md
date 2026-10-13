@@ -22,8 +22,8 @@ O que chamou a atencao? Como se conecta com seus projetos ou estudos?
 
 ## Potencial de Uso
 
-- Aplicacao 1
-- Aplicacao 2
+- Aplicação 1
+- Aplicação 2
 - Sinergia com [[22_Ferramentas/README|Ferramentas]]
 
 ## Tech Stack
@@ -31,12 +31,12 @@ O que chamou a atencao? Como se conecta com seus projetos ou estudos?
 - **Linguagens:**
 - **Framework:**
 - **Infra:**
-- **Licenca:**
+- **Licença:**
 
 ## Links
 
 - Repositorio: [URL]()
-- Documentacao: [URL]()
+- Documentação: [URL]()
 - Demo: [URL]()
 
 ## Status
@@ -47,7 +47,7 @@ O que chamou a atencao? Como se conecta com seus projetos ou estudos?
 - [ ] Adotado
 - [ ] Arquivado
 
-## Anotacoes / Primeiras Impressoes
+## Anotações / Primeiras Impressões
 
 Espaco para notas livres sobre a ferramenta.
 

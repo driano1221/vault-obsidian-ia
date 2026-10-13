@@ -10,15 +10,15 @@ periodo_inicio:
 periodo_fim:
 ---
 
-# Titulo da Experiencia
+# Título da Experiência
 
 ## Resumo
 
-Breve descricao da experiencia em 2-3 linhas.
+Breve descrição da experiencia em 2-3 linhas.
 
 ## Contexto
 
-Projeto, equipe, tecnologias envolvidas e o problema/situacao inicial.
+Projeto, equipe, tecnologias envolvidas e o problema/situação inicial.
 
 ## O Que Aconteceu
 
@@ -30,30 +30,30 @@ Narrativa do que foi feito, as etapas e os desafios encontrados pelo caminho.
 - Acerto 2
 - Acerto 3
 
-## O Que Nao Funcionou
+## O Que Não Funcionou
 
 - Erro ou dificuldade 1
 - Erro ou dificuldade 2
 - Causa raiz:
 
-## Licoes Aprendidas
+## Lições Aprendidas
 
-> Licao acionavel e concreta que se aplica a projetos futuros.
+> Lição acionável e concreta que se aplica a projetos futuros.
 
-1. **Licao 1** - explicacao
-2. **Licao 2** - explicacao
+1. **Lição 1** - explicacao
+2. **Lição 2** - explicacao
 
-## Decisoes Importantes
+## Decisões Importantes
 
-| Decisao | Alternativa | Por que escolhemos | Resultado |
+| Decisão | Alternativa | Por que escolhemos | Resultado |
 |---------|-------------|--------------------|-----------|
 |         |             |                    |           |
 
-## Proximos Passos
+## Próximos Passos
 
 - [ ] O que fazer com esse aprendizado
 
 ## Links Relacionados
 
-- [[25_Experiencias/README|Experiencias]]
+- [[25_Experiencias/README|Experiências]]
 - [[Home]]

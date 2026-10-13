@@ -45,6 +45,8 @@ Cada área de vida ou trabalho com assunto próprio tem sua pasta. Estas pastas 
 - ALWAYS: adicionar `data` (nunca `date`) e `tags` no frontmatter de novas notas Markdown.
 - ALWAYS: usar nomes de arquivo sem espaços e sem acentos, em minúsculas e com hífens, no padrão `YYYY-MM-DD-assunto.md` para notas datadas.
 - ALWAYS: adicionar pelo menos um wikilink relevante, de preferência para o `README.md` da pasta.
+- ALWAYS: ao criar uma nota, listá-la no topo da seção "Arquivos Desta Pasta" do `README.md` da pasta (na primeira vez, apagando o texto entre parênteses que está lá).
+- ALWAYS: toda data futura citada (prazo, entrega, prova, reunião marcada) vira também uma nota própria, curta, na pasta do contexto, com `data:` igual à data do evento, nome `AAAA-MM-DD-prazo-assunto.md`, `status: agendado` e link para a nota de origem. Sem isso, o evento não aparece no calendário.
 - ALWAYS: usar a pasta de contexto correta em vez de misturar assuntos.
 - ALWAYS: se o contexto estiver claro, salvar direto na pasta correta; não usar Inbox.
 %% regras:inicio %%
@@ -65,7 +67,8 @@ Cada área de vida ou trabalho com assunto próprio tem sua pasta. Estas pastas 
 Registrar reunião:
 - criar nota datada no contexto correto (modelo em `80_Templates/Template-Reuniao.md`);
 - resumir pontos principais e listar pendências;
-- linkar ao `README.md` da pasta.
+- para cada prazo citado, criar a nota de prazo datada (regra acima);
+- linkar ao `README.md` da pasta e atualizar a lista dele.
 
 Salvar prompt:
 - usar `23_Prompts`;

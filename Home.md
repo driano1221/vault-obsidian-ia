@@ -15,9 +15,7 @@ Mapa principal da base de conhecimento. Primeira vez aqui? Leia [[como-usar-vaul
 
 ## Meus Contextos
 
-%% contextos:inicio %%
 - [[01_Exemplo_Trabalho/README|Exemplo Trabalho]] (pasta de demonstração)
-%% contextos:fim %%
 
 ## Aprender e Guardar
 
