@@ -17,25 +17,50 @@ O modelo traz a estrutura, as regras e as automações, **não** as notas de nin
 - **Skills de Obsidian** ([kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)): Markdown do Obsidian, Bases, Canvas, CLI e extração de páginas web.
 - **Notas de exemplo** fictícias, para ver tudo funcionando antes de começar. O `/configurar-vault` apaga se você quiser.
 
-## Começar
+## Começar (tudo pelo Claude Code)
 
-1. **Pegue uma cópia:** botão **Use this template** (cria um repositório seu) ou **Code -> Download ZIP**. Se baixou o zip, extraia e renomeie a pasta para o nome que quiser: ele vira o nome do cofre.
-2. **Abra no Obsidian:** *Abrir pasta como cofre* e escolha a pasta.
-3. **Instale o plugin do calendário** (opcional, mas recomendado):
-   - Configurações -> Plugins da comunidade -> **Ativar plugins da comunidade**;
-   - **Procurar** -> "Calendar Bases" -> **Instalar** -> **Ativar**;
-   - abra `90_Visoes/linha-do-tempo.base` e escolha a vista **Calendario** no seletor de vistas. Se ela pedir a data, clique na engrenagem da vista e defina `Start date` = `data`.
+Você precisa só de duas coisas instaladas: o [Obsidian](https://obsidian.md) e o [Claude Code](https://claude.com/claude-code). Do resto, o agente cuida.
 
-   Sem o plugin, todas as outras vistas da linha do tempo funcionam normalmente.
-4. **Configure com o agente:** no terminal, dentro da pasta do vault:
+**1.** Abra o terminal na pasta onde quer guardar o vault (por exemplo, Documentos), rode `claude` e cole:
 
-   ```bash
-   claude
-   ```
+```text
+Instale para mim o vault https://github.com/driano1221/vault-obsidian-ia numa pasta
+chamada MeuVault, aqui, sem o histórico do git. Depois leia o CLAUDE.md e siga
+.claude/commands/configurar-vault.md comigo.
+```
 
-   e depois digite `/configurar-vault`. Ele faz 4 perguntas, mostra o plano e só cria as pastas depois do seu ok.
+Troque `MeuVault` pelo nome que quiser; ele vira o nome do cofre no Obsidian.
 
-   No Codex, peça: "leia `.claude/commands/configurar-vault.md` e siga os passos".
+**2.** Responda as 4 perguntas do agente: quem você é, suas áreas (trabalho, clientes, curso...), se há regras de separação e se quer manter as notas de exemplo. Ele mostra o plano e só mexe em algo depois do seu ok.
+
+**3.** O agente cria suas pastas, instala o plugin do calendário e abre o Obsidian no vault novo. Ali aparece uma única pergunta, **"Você confia no autor deste cofre?"**: clique em **Confiar no autor e habilitar plugins**. É o único clique da instalação.
+
+**4.** Para o dia a dia, abra o terminal **dentro** da pasta do vault e rode `claude`. Assim as regras e os comandos `/` carregam sozinhos.
+
+```bash
+cd MeuVault
+claude
+```
+
+## O que pedir no dia a dia
+
+Fale normalmente, como contaria a alguém:
+
+| Você diz | O agente faz |
+|---|---|
+| "tive reunião com a Marina, decidimos X, a entrega é dia 20" | nota da reunião na pasta certa + nota do prazo no calendário |
+| "achei essa ferramenta: [link], quero testar" | captura em Ferramentas, com 30 dias para virar adotada, referência ou descartada |
+| "li esse artigo: [link]" | nota em Leituras com resumo |
+| "tive uma ideia: ..." | nota em Ideias com problema, ideia central e próximo passo |
+| "o que eu tenho de prazo esta semana?" | busca nas notas com data |
+| "abre no Obsidian" / "quero ver o calendário" | abre o Obsidian no vault |
+| `/briefing <tema>` | junta tudo o que o vault sabe sobre um tema |
+| `/processar-rascunhos` | revisa notas soltas e capturas paradas há mais de 30 dias |
+| `/vault-review` | relatório de notas órfãs, links faltando e nomes fora do padrão |
+| `/design-vault faz um gráfico com esse CSV` | gráfico, slide ou tela seguindo as suas regras de design |
+| `/configurar-vault` | acrescenta ou renomeia áreas depois; `/configurar-vault apagar exemplos` limpa os exemplos |
+
+No Codex, o arquivo de regras é o `AGENTS.md`; para configurar, peça "leia `.claude/commands/configurar-vault.md` e siga os passos".
 
 Sem agente, o vault também funciona: use os modelos em `80_Templates` e o guia `como-usar-vault.md`.
 
@@ -66,5 +91,5 @@ Se você versionar o **seu** vault no GitHub, deixe o repositório **privado**. 
 ## Créditos e licença
 
 - Skills de Obsidian em `.claude/skills/` (exceto `design-vault`): [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills), licença MIT (`.claude/skills/LICENSE-obsidian-skills`).
-- Plugin de calendário: [Calendar Bases](https://github.com/edrickleong/obsidian-calendar-bases), de Edrick Leong (não incluído, instale pelo Obsidian).
+- Plugin de calendário: [Calendar Bases](https://github.com/edrickleong/obsidian-calendar-bases), de Edrick Leong (não incluído no repositório; o script `.claude/scripts/instalar_calendario.py` baixa a versão mais recente do GitHub do autor).
 - O restante do modelo está sob licença MIT (`LICENSE`).

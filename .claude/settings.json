@@ -3,7 +3,13 @@
     "allow": [
       "Bash(python .claude/scripts/triagem_validade.py:*)",
       "Bash(python3 .claude/scripts/triagem_validade.py:*)",
-      "Bash(py .claude/scripts/triagem_validade.py:*)"
+      "Bash(py .claude/scripts/triagem_validade.py:*)",
+      "Bash(python .claude/scripts/abrir_obsidian.py:*)",
+      "Bash(python .claude/scripts/instalar_calendario.py:*)",
+      "Bash(python3 .claude/scripts/abrir_obsidian.py:*)",
+      "Bash(python3 .claude/scripts/instalar_calendario.py:*)",
+      "Bash(py .claude/scripts/abrir_obsidian.py:*)",
+      "Bash(py .claude/scripts/instalar_calendario.py:*)"
     ]
   }
 }

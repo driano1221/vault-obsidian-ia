@@ -86,6 +86,11 @@ Salvar ideia de projeto:
 - usar `24_Ideias`;
 - registrar problema, ideia central, valor esperado, MVP e status.
 
+Abrir o vault no Obsidian ("abre no Obsidian", "quero ver o calendário"):
+- rodar `python .claude/scripts/abrir_obsidian.py` e seguir a mensagem dele (código 2: Obsidian não instalado; código 3: pedir para fechar o Obsidian e rodar de novo).
+
+A pessoa usa o vault pelo Claude Code: não peça para ela editar configurações do Obsidian à mão; use os scripts em `.claude/scripts/`.
+
 Criar algo visual (gráfico, mapa, slides, dashboard, app, tela):
 - usar a skill `design-vault`;
 - ela segue `26_Design/dicionario-design.md`, `regras-de-design-aprovadas.md` e `galeria-design.md`.

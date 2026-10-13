@@ -83,7 +83,15 @@ Depois do ok:
    - **Se ela pediu para apagar:** apague esses arquivos (os que ainda existirem) e a pasta `01_Exemplo_Trabalho`, se ficar vazia. Depois, troque no `90_Visoes/painel-atual.md` a seção "Exemplo Trabalho" por uma seção vazia (`- [ ] `) por contexto, e tire qualquer menção restante ao exemplo: a linha do `01_Exemplo_Trabalho` no `Home.md` e no bloco `contextos` do `CLAUDE.md`, e a subseção `### Exemplo Trabalho` do modelo de diário.
    - **Se pediu para manter:** não toque neles. Avise que dá para rodar `/configurar-vault apagar exemplos` depois.
 
-5. **Conferir:**
+5. **Preparar o Obsidian** (a pessoa usa tudo pelo Claude Code; não peça para ela mexer em configurações):
+   - instalar o plugin do calendário: `python .claude/scripts/instalar_calendario.py` (use `python3` no Mac/Linux, `py` no Windows se `python` não existir). Ele baixa o Calendar Bases do GitHub do autor e o ativa. Se ela já tiver dito que não quer, pule;
+   - abrir o vault no Obsidian: `python .claude/scripts/abrir_obsidian.py`. Pelo código de saída:
+     - `0`: aberto;
+     - `2`: o Obsidian não está instalado. Diga para baixar em https://obsidian.md, abrir uma vez e avisar, e então rode de novo;
+     - `3`: o Obsidian está aberto e ainda não conhece este vault. Peça para fechar o Obsidian (todas as janelas), espere o ok e rode de novo;
+   - avise que, na primeira abertura, o Obsidian pergunta **"Você confia no autor deste cofre?"** e que ela deve clicar em **"Confiar no autor e habilitar plugins"**. Sem isso, o calendário não liga.
+
+6. **Conferir:**
    - todo wikilink novo aponta para um arquivo que existe;
    - nenhum marcador do `CLAUDE.md` ficou duplicado ou foi apagado;
    - `90_Visoes/linha-do-tempo.base` não precisa mudar, porque o contexto vem do nome da pasta.
@@ -93,8 +101,7 @@ Depois do ok:
 Responda curto:
 - as pastas criadas;
 - o que mudou no `CLAUDE.md`, no `Home.md`, no `sobre-mim.md` e no modelo de diário;
-- os próximos passos, que só ela pode fazer no Obsidian:
-  - instalar o plugin **Calendar Bases** (Configurações -> Plugins da comunidade -> Procurar), que liga a vista Calendário da linha do tempo;
-  - opcional: preencher `26_Design` aos poucos.
+- se o Obsidian abriu e o clique de "Confiar no autor" que falta;
+- se esta sessão do Claude Code não foi aberta dentro da pasta do vault, avise: para o dia a dia, abrir o terminal na pasta do vault e rodar `claude` (assim as regras e os comandos `/` carregam sozinhos).
 
 Termine sugerindo um primeiro uso real, por exemplo: "me conta algo que aconteceu hoje em uma dessas áreas que eu transformo na primeira nota".
