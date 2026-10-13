@@ -19,7 +19,7 @@ O modelo traz a estrutura, as regras e as automações, **não** as notas de nin
 
 ## Começar
 
-1. **Pegue uma cópia:** botão **Use this template** (cria um repositório seu) ou **Code -> Download ZIP**.
+1. **Pegue uma cópia:** botão **Use this template** (cria um repositório seu) ou **Code -> Download ZIP**. Se baixou o zip, extraia e renomeie a pasta para o nome que quiser: ele vira o nome do cofre.
 2. **Abra no Obsidian:** *Abrir pasta como cofre* e escolha a pasta.
 3. **Instale o plugin do calendário** (opcional, mas recomendado):
    - Configurações -> Plugins da comunidade -> **Ativar plugins da comunidade**;
