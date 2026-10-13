@@ -4,8 +4,8 @@ Argumentos opcionais: $ARGUMENTS
 
 ## 1. Ver o estado atual
 
-- Leia `CLAUDE.md`, `Home.md`, `80_Templates/Template-Nota-Diaria.md` e `.claude/exemplos.txt`.
-- Se o bloco `<!-- perfil:inicio -->` do `CLAUDE.md` já tiver um nome (não diz "a configurar"), o vault já foi configurado. Pergunte se a pessoa quer **acrescentar contextos**, **renomear algum** ou **refazer o perfil**, e faça só isso.
+- Leia `CLAUDE.md`, `Home.md`, `sobre-mim.md` e `80_Templates/Template-Nota-Diaria.md`.
+- Se o bloco `%% perfil:inicio %%` do `CLAUDE.md` já tiver um nome (não diz "a configurar"), o vault já foi configurado. Pergunte se a pessoa quer **acrescentar contextos**, **renomear algum** ou **refazer o perfil**, e faça só isso.
 
 ## 2. Perguntar, em um lote só
 
@@ -66,11 +66,21 @@ Depois do ok:
    - `Home.md`, bloco `contextos`: `- [[01_Nome/README|Nome legível]]` para cada pasta;
    - `80_Templates/Template-Nota-Diaria.md`, bloco `contextos`: uma subseção `### Nome legível` com `- [ ] ` embaixo, para cada contexto.
 
-3. **Escrever `.claude/context/perfil.md`** com o que a pessoa contou (quem é, áreas, regras), para o agente ter contexto nas próximas sessões. Se ela tiver falado mais de uma área em detalhe, crie um arquivo por área em `.claude/context/`.
+3. **Preencher `sobre-mim.md`**, na raiz do vault, com o que a pessoa contou: quem é, o que faz, uma seção curta por área (o que é, pessoas e siglas que ela citou) e as regras de separação. Troque o texto de "a preencher", mantenha o frontmatter e atualize a `data` para hoje. É dessa nota que o agente tira contexto nas próximas sessões.
 
-4. **Notas de exemplo:**
-   - **Se ela pediu para apagar:** apague os arquivos listados em `.claude/exemplos.txt`, a pasta `01_Exemplo_Trabalho` (se o nome não foi reaproveitado) e o próprio `exemplos.txt`. Depois, tire do `90_Visoes/painel-atual.md` as tarefas de exemplo e deixe uma seção vazia por contexto.
-   - **Se pediu para manter:** não toque nelas. Avise que dá para rodar `/configurar-vault apagar exemplos` depois.
+4. **Notas de exemplo.** São estes os arquivos de exemplo do modelo:
+
+   ```text
+   01_Exemplo_Trabalho/2026-10-08-reuniao-kickoff-cliente.md
+   01_Exemplo_Trabalho/2026-10-20-prazo-proposta-cliente.md
+   01_Exemplo_Trabalho/README.md
+   22_Ferramentas/2026-10-10-ferramenta-exemplo-excalidraw.md
+   24_Ideias/2026-10-11-ideia-exemplo-cardapio-qr.md
+   81_Diario/2026-10-12.md
+   ```
+
+   - **Se ela pediu para apagar:** apague esses arquivos (os que ainda existirem) e a pasta `01_Exemplo_Trabalho`, se ficar vazia. Depois, troque no `90_Visoes/painel-atual.md` a seção "Exemplo Trabalho" por uma seção vazia (`- [ ] `) por contexto.
+   - **Se pediu para manter:** não toque neles. Avise que dá para rodar `/configurar-vault apagar exemplos` depois.
 
 5. **Conferir:**
    - todo wikilink novo aponta para um arquivo que existe;
@@ -81,10 +91,9 @@ Depois do ok:
 
 Responda curto:
 - as pastas criadas;
-- o que mudou no `CLAUDE.md`, no `Home.md` e no modelo de diário;
-- os próximos passos manuais, que só ela pode fazer no Obsidian:
-  - instalar o plugin **Calendar Bases**, que dá a vista Calendário;
-  - na primeira vez que abrir a vista Calendário, definir `Start date` = `data`;
+- o que mudou no `CLAUDE.md`, no `Home.md`, no `sobre-mim.md` e no modelo de diário;
+- os próximos passos, que só ela pode fazer no Obsidian:
+  - instalar o plugin **Calendar Bases** (Configurações -> Plugins da comunidade -> Procurar), que liga a vista Calendário da linha do tempo;
   - opcional: preencher `26_Design` aos poucos.
 
 Termine sugerindo um primeiro uso real, por exemplo: "me conta algo que aconteceu hoje em uma dessas áreas que eu transformo na primeira nota".

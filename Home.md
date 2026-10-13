@@ -15,9 +15,9 @@ Mapa principal da base de conhecimento. Primeira vez aqui? Leia [[como-usar-vaul
 
 ## Meus Contextos
 
-<!-- contextos:inicio -->
+%% contextos:inicio %%
 - [[01_Exemplo_Trabalho/README|Exemplo Trabalho]] (pasta de demonstração)
-<!-- contextos:fim -->
+%% contextos:fim %%
 
 ## Aprender e Guardar
 
@@ -40,6 +40,7 @@ Mapa principal da base de conhecimento. Primeira vez aqui? Leia [[como-usar-vaul
 ## Sistema do Vault
 
 - [[como-usar-vault|Como usar este vault]]
+- [[sobre-mim|Sobre mim]]
 - [[CLAUDE|Regras do agente (CLAUDE.md)]]
 - [[90_Visoes/README|Visões do vault]]
 

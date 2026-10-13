@@ -18,11 +18,11 @@ Breve sintese do dia em 2-4 linhas.
 
 ## Contextos
 
-<!-- contextos:inicio -->
+%% contextos:inicio %%
 ### Exemplo Trabalho
 
 - [ ] 
-<!-- contextos:fim -->
+%% contextos:fim %%
 
 ### Estudos
 

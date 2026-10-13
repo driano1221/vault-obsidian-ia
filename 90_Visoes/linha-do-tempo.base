@@ -82,4 +82,7 @@ views:
         direction: DESC
   - type: calendar
     name: Calendario
+    filters:
+      and:
+        - '!file.hasTag("sistema/vault", "visao", "indice", "regras", "galeria")'
     startDate: data

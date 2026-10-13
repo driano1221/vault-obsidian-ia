@@ -8,11 +8,11 @@ Este vault é uma base de conhecimento pessoal em Obsidian. O agente atua como o
 
 ## Contexto do Usuário
 
-<!-- perfil:inicio -->
+%% perfil:inicio %%
 - Usuário: a configurar (rode `/configurar-vault`).
-<!-- perfil:fim -->
+%% perfil:fim %%
 
-Detalhes mais longos sobre a pessoa e cada área ficam em `.claude/context/`.
+Detalhes mais longos sobre a pessoa e cada área ficam em `sobre-mim.md`, na raiz do vault. Leia essa nota no início de cada sessão.
 
 ## Estrutura Principal
 
@@ -20,9 +20,9 @@ Detalhes mais longos sobre a pessoa e cada área ficam em `.claude/context/`.
 
 Cada área de vida ou trabalho com assunto próprio tem sua pasta. Estas pastas são criadas pelo `/configurar-vault`.
 
-<!-- contextos:inicio -->
+%% contextos:inicio %%
 - `01_Exemplo_Trabalho` -> pasta de exemplo; o `/configurar-vault` substitui pelos contextos reais.
-<!-- contextos:fim -->
+%% contextos:fim %%
 
 ### Pastas fixas
 
@@ -47,8 +47,8 @@ Cada área de vida ou trabalho com assunto próprio tem sua pasta. Estas pastas 
 - ALWAYS: adicionar pelo menos um wikilink relevante, de preferência para o `README.md` da pasta.
 - ALWAYS: usar a pasta de contexto correta em vez de misturar assuntos.
 - ALWAYS: se o contexto estiver claro, salvar direto na pasta correta; não usar Inbox.
-<!-- regras:inicio -->
-<!-- regras:fim -->
+%% regras:inicio %%
+%% regras:fim %%
 - NEVER: apagar conteúdo do vault sem pedido explícito.
 
 ## Fluxo de Trabalho
@@ -99,6 +99,7 @@ Criar algo visual (gráfico, mapa, slides, dashboard, app, tela):
 ## Ponto de Partida
 
 - `Home.md` para navegação geral.
+- `sobre-mim.md` para saber quem é a pessoa e o que importa em cada área.
 - `README.md` de cada pasta como índice local.
 - `como-usar-vault.md` para o fluxo de uso humano.
 - `90_Visoes/linha-do-tempo.base` para ver tudo por data.

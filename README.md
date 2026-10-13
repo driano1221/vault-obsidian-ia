@@ -55,12 +55,13 @@ Sem agente, o vault também funciona: use os modelos em `80_Templates` e o guia 
 81_Diario       notas diárias
 90_Visoes       linha do tempo, calendário, painel
 99_Anexos       imagens e anexos
-.claude/        comandos, skills, script de triagem e contexto do agente
+.claude/        comandos, skills e script de triagem do agente
+sobre-mim.md    quem você é e suas áreas (preenchida pelo /configurar-vault)
 ```
 
 ## Privacidade
 
-Se você versionar o **seu** vault no GitHub, deixe o repositório **privado**. A pasta `.claude/context/` guarda o que você contou ao agente sobre você.
+Se você versionar o **seu** vault no GitHub, deixe o repositório **privado**. A nota `sobre-mim.md` guarda o que você contou ao agente sobre você.
 
 ## Créditos e licença
 
