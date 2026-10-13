@@ -22,9 +22,11 @@ O modelo traz a estrutura, as regras e as automações, **não** as notas de nin
 1. **Pegue uma cópia:** botão **Use this template** (cria um repositório seu) ou **Code -> Download ZIP**.
 2. **Abra no Obsidian:** *Abrir pasta como cofre* e escolha a pasta.
 3. **Instale o plugin do calendário** (opcional, mas recomendado):
-   - Configurações -> Plugins da comunidade -> ative os plugins da comunidade;
-   - procure **Calendar Bases**. Se não aparecer na busca, instale o plugin **BRAT** e, nele, adicione `edrickleong/obsidian-calendar-bases`;
-   - abra `90_Visoes/linha-do-tempo.base`, vá na vista **Calendário**, clique na engrenagem e defina `Start date` = `data`.
+   - Configurações -> Plugins da comunidade -> **Ativar plugins da comunidade**;
+   - **Procurar** -> "Calendar Bases" -> **Instalar** -> **Ativar**;
+   - abra `90_Visoes/linha-do-tempo.base` e escolha a vista **Calendario** no seletor de vistas. Se ela pedir a data, clique na engrenagem da vista e defina `Start date` = `data`.
+
+   Sem o plugin, todas as outras vistas da linha do tempo funcionam normalmente.
 4. **Configure com o agente:** no terminal, dentro da pasta do vault:
 
    ```bash

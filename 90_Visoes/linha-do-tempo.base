@@ -8,7 +8,7 @@ filters:
     - '!file.inFolder("80_Templates")'
 formulas:
   mes: date(data).format("YYYY-MM")
-  contexto: if(file.folder == "", "Raiz", file.folder.split("/", 1).join(""))
+  contexto: if(file.folder == "/" || file.folder == "", "Raiz", file.folder.split("/", 1).join(""))
   dias_desde: (today() - date(data)).days
 properties:
   file.name:
