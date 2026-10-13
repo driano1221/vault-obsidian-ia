@@ -1,0 +1,8 @@
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.trash/
+.claude/settings.local.json
+.claude/triagem-estado.json
+__pycache__/
+.DS_Store

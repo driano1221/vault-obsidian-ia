@@ -1,0 +1,9 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "99_Anexos",
+  "promptDelete": false,
+  "userIgnoreFilters": [
+    "80_Templates/"
+  ]
+}

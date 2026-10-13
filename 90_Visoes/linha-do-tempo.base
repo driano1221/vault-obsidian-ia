@@ -1,0 +1,85 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.hasProperty("data")
+    - file.name != "README"
+    - '!file.inFolder(".claude")'
+    - '!file.inFolder(".obsidian")'
+    - '!file.inFolder("80_Templates")'
+formulas:
+  mes: date(data).format("YYYY-MM")
+  contexto: if(file.folder == "", "Raiz", file.folder.split("/", 1).join(""))
+  dias_desde: (today() - date(data)).days
+properties:
+  file.name:
+    displayName: Nota
+  file.folder:
+    displayName: Pasta
+  data:
+    displayName: Data
+  tags:
+    displayName: Tags
+  status:
+    displayName: Status
+  formula.mes:
+    displayName: Mes
+  formula.contexto:
+    displayName: Contexto
+  formula.dias_desde:
+    displayName: Dias desde
+views:
+  - type: table
+    name: Linha do tempo
+    order:
+      - file.name
+      - data
+      - formula.contexto
+      - tags
+      - status
+      - file.folder
+    sort:
+      - property: data
+        direction: DESC
+    columnSize:
+      note.tags: 80
+  - type: cards
+    name: Cartoes
+    order:
+      - file.name
+      - data
+      - formula.contexto
+      - tags
+      - status
+    sort:
+      - property: data
+        direction: DESC
+  - type: table
+    name: Por contexto
+    groupBy:
+      property: formula.contexto
+      direction: ASC
+    order:
+      - file.name
+      - data
+      - tags
+      - status
+    sort:
+      - property: data
+        direction: DESC
+  - type: table
+    name: Por mes
+    groupBy:
+      property: formula.mes
+      direction: ASC
+    order:
+      - file.name
+      - data
+      - formula.contexto
+      - tags
+      - status
+    sort:
+      - property: data
+        direction: DESC
+  - type: calendar
+    name: Calendario
+    startDate: data

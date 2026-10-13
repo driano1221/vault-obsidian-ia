@@ -1,0 +1,6 @@
+01_Exemplo_Trabalho/2026-10-08-reuniao-kickoff-cliente.md
+01_Exemplo_Trabalho/2026-10-20-prazo-proposta-cliente.md
+01_Exemplo_Trabalho/README.md
+22_Ferramentas/2026-10-10-ferramenta-exemplo-excalidraw.md
+24_Ideias/2026-10-11-ideia-exemplo-cardapio-qr.md
+81_Diario/2026-10-12.md
