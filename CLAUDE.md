@@ -94,7 +94,7 @@ Criar algo visual (gráfico, mapa, slides, dashboard, app, tela):
 - Encerrado: `descartado` (a nota fica na pasta, só sai das pendências).
 - Toda captura nova de ferramenta, leitura ou estudo entra com um status pendente. Material claramente de consulta (lista de recursos, catálogo, guia, galeria) pode entrar direto como `referencia`.
 - Ao revisar uma nota, registrar `revisado: YYYY-MM-DD` no frontmatter.
-- Revisão diária no chat: depois de salvar qualquer captura, rodar `python .claude/scripts/triagem_validade.py --diario --limite 5` (na raiz do vault; se `python` não existir, usar `py`). Se não imprimir nada, seguir normalmente. Se imprimir uma tabela, terminar a resposta com uma única linha oferecendo revisar essas notas. Se o usuário aceitar, seguir a Parte B de `.claude/commands/processar-rascunhos.md` só para elas. Se ignorar, não insistir no mesmo dia.
+- Revisão diária no chat: depois de salvar qualquer captura, rodar `python .claude/scripts/triagem_validade.py --diario --limite 5` (na raiz do vault; se `python` não existir, usar `python3` no Mac/Linux ou `py` no Windows). Se não imprimir nada, seguir normalmente. Se imprimir uma tabela, terminar a resposta com uma única linha oferecendo revisar essas notas. Se o usuário aceitar, seguir a Parte B de `.claude/commands/processar-rascunhos.md` só para elas. Se ignorar, não insistir no mesmo dia.
 
 ## Ponto de Partida
 

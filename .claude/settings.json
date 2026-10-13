@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python .claude/scripts/triagem_validade.py:*)",
+      "Bash(python3 .claude/scripts/triagem_validade.py:*)",
+      "Bash(py .claude/scripts/triagem_validade.py:*)"
+    ]
+  }
+}
