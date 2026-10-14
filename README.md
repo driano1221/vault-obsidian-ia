@@ -24,8 +24,9 @@ Você precisa só de duas coisas instaladas: o [Obsidian](https://obsidian.md) e
 **1.** Abra o terminal na pasta onde quer guardar o vault (por exemplo, Documentos), rode `claude` e cole:
 
 ```text
-Instale para mim o vault https://github.com/driano1221/vault-obsidian-ia numa pasta
-chamada MeuVault, aqui, sem o histórico do git. Depois leia o CLAUDE.md e siga
+Baixe o zip https://github.com/driano1221/vault-obsidian-ia/archive/refs/heads/master.zip,
+extraia o conteúdo (sem a pasta interna extra) numa pasta chamada MeuVault aqui,
+e apague o zip. Depois leia o CLAUDE.md dessa pasta e siga
 .claude/commands/configurar-vault.md comigo.
 ```
 
